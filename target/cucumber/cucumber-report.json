@@ -1,0 +1,169 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-25T22:16:57.294Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2756616800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Calculate Mortgage rate with given values and default values",
+        "description": "",
+        "id": "mortgage-claculator-test-datatable;calculate-mortgage-rate-with-given-values-and-default-values;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 4271125300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "step_definitions.Hook.teardown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 4390781000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I am on the Mortgage Calculator website",
+            "match": {
+              "location": "step_definitions.MortgageCalculatorStepDefs.iAmOnTheMortgageCalculatorWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3124481800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter the following",
+            "match": {
+              "location": "step_definitions.MortgageCalculatorStepDefs.iEnterTheFollowing(java.util.List\u003cjava.util.List\u003cjava.lang.String\u003e\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "field",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "homeValue",
+                  "50000"
+                ]
+              },
+              {
+                "cells": [
+                  "downPayment",
+                  "20000"
+                ]
+              },
+              {
+                "cells": [
+                  "interestRate",
+                  "5"
+                ]
+              },
+              {
+                "cells": [
+                  "loanTerm",
+                  "25"
+                ]
+              },
+              {
+                "cells": [
+                  "startMonth",
+                  "Sep"
+                ]
+              },
+              {
+                "cells": [
+                  "startYear",
+                  "2020"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 998500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "accept default value for all the remaining values",
+            "match": {
+              "location": "step_definitions.MortgageCalculatorStepDefs.acceptDefaultValueForAllTheRemainingValues()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 305182900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I should get mortage offer with \"$458.71\", \"$20,000.00\", \"40.00%\", \"Aug, 2045\", \"$22,613.10\" and \"$203.00\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"$458.71\"",
+                  "offset": 32
+                },
+                {
+                  "val": "\"$20,000.00\"",
+                  "offset": 43
+                },
+                {
+                  "val": "\"40.00%\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"Aug, 2045\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"$22,613.10\"",
+                  "offset": 80
+                },
+                {
+                  "val": "\"$203.00\"",
+                  "offset": 97
+                }
+              ],
+              "location": "step_definitions.MortgageCalculatorStepDefs.iShouldGetMortageOfferWithAnd(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@F1"
+          }
+        ]
+      }
+    ],
+    "name": "Mortgage claculator test DATATABLE",
+    "description": "",
+    "id": "mortgage-claculator-test-datatable",
+    "keyword": "Feature",
+    "uri": "file:src/main/resources/featureFiles/MortgageCalculator.feature",
+    "tags": []
+  }
+]

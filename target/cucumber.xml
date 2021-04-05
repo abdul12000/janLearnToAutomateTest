@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="15.686">
+    <testcase classname="Mortgage claculator test DATATABLE" name="Calculate Mortgage rate with given values and default values" time="15.026">
+        <system-out><![CDATA[Given I am on the Mortgage Calculator website...............................passed
+When I enter the following..................................................passed
+And accept default value for all the remaining values.......................passed
+Then I should get mortage offer with "$458.71", "$20,000.00", "40.00%", "Aug, 2045", "$22,613.10" and "$203.00".passed
+]]></system-out>
+    </testcase>
+</testsuite>
